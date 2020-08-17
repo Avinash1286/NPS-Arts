@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">NPS Arts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">notify01</string>
+
+    <string name="message">
+
+        <![CDATA[
+
+<p>Dear all Users,NPS Arts Rautahat app is a platform for the Nepal Police School Students where they can
+show and share their creations with school family.As well as they can access all the articles of the NPS students online anywhere anytime they wants.
+</P>
+]]>
+
+    </string>
+
+
+    <string name="terms">
+
+        <![CDATA[
+
+<b>Students should follow the following conditions for posting the articles.</b>
+<br>
+<br>
+1.Students should not post controversy articles<br>
+2.They should not use rough words that might hurt someone feeling.<br>
+<br><br>
+<b>Notice: </b>If any users using this application violets the terms and conditions then we will take a legal action
+against their profile
+]]>
+
+    </string>
+
+</resources>

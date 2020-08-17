@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".WeeklyQuiz">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/showMainBody"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/quizTimeLogo"
+            android:src="@drawable/quiztime"
+            />
+
+        <ticker.views.com.ticker.widgets.circular.timer.view.CircularView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quizTimeLogo"
+            android:layout_centerHorizontal="true"
+            app:m_arc_stroke_color="@android:color/white"
+            app:m_cicle_stroke_width="14"
+            app:m_circle_radius="75"
+            app:m_circle_stroke_color="#F44336" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/questionHolder"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_below="@id/timer"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/relstroke"
+            android:layout_below="@id/questionHolder"
+            android:id="@+id/optionOne">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="A"
+                android:background="@drawable/optionsback"
+                android:id="@+id/optionAHeading"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/but1"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/relstroke"
+            android:layout_below="@id/optionOne"
+            android:id="@+id/optionTwo">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="B"
+                android:background="@drawable/optionsback"
+                android:id="@+id/optionBHeading"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/but2"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/relstroke"
+            android:layout_below="@id/optionTwo"
+            android:id="@+id/optionsThree">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:background="@drawable/optionsback"
+                android:id="@+id/optionCHeading"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/but3"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/relstroke"
+            android:layout_below="@id/optionsThree"
+            android:id="@+id/optionFour">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="D"
+                android:background="@drawable/optionsback"
+                android:id="@+id/optionDHeading"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/but4"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noCompetitionMessaggeHolder"
+        android:layout_below="@id/quizTool"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#fff"
+        android:padding="10dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/inactive"
+                android:id="@+id/noCompetitionImage"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showNoCompetitionmessage"
+                android:textSize="30sp"
+                android:layout_below="@+id/noCompetitionImage"
+                 android:text="Quiz is currently \ninactive"
+                android:textColor="#FA3B00"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+<!--
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/takepartHolder"
+        android:layout_below="@id/quizToolappbar"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#fff"
+        android:padding="10dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/goog"
+                android:id="@+id/showTakenPartImage"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTakenPartMessage"
+                android:textSize="30sp"
+                android:layout_below="@+id/showTakenPartImage"
+                android:text="You have already Taken Part"
+                android:textColor="#FF9800"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/showTimeUp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/noInternetHolder"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/nointernetimageholder"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/nointerneimage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_below="@id/nointernetimageholder"
+            android:textStyle="bold"
+            android:id="@+id/showNOInternetMessage"
+            android:textColor="#969393"
+            android:text="No Internet Connection"
+            />
+    </RelativeLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizTool"
+        android:background="#00FFFFFF"
+        />
+
+
+    <com.github.loadingview.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerInParent="true"
+        app:lv_duration="30"
+        app:lv_end_color="#2196F3"
+        app:lv_external_radius="24dp"
+        app:lv_internal_radius="4dp"
+        app:lv_start_color="#2196F3" />
+</RelativeLayout>
